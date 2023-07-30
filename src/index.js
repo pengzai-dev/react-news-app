@@ -1,45 +1,18 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
-import App from './components/App';
-import NotFound from './components/NotFound';
-
-import registerServiceWorker from './registerServiceWorker';
-
-import './css/bootstrap.min.css';
-import './css/font-awesome.min.css';
-import './css/style.css';
-
-/*
- fonts Import here
-*/
-import WebFont from 'webfontloader';
-
-WebFont.load({
-  google: {
-    families: ['Karla', 'Lato', 'Open Sans', 'Roboto', 'sans-serif']
-  }
-});
-
-
-
-/*
-STateless Router Components Setup
-*/
-
-const Root = () => {
-  return (
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/" exact component={App} />
-          <Route component={NotFound} />
-        </Switch>
-      </div>
-    </Router>
-  )
-}
-render(<Root />, document.querySelector('#root'));
-registerServiceWorker();
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

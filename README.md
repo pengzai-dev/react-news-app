@@ -1,15 +1,12 @@
-# react-news-app
-Building a React app which makes use of  https://newsapi.org/ API
+# React News App
 
-# Introduction
+## Setup & Run
 
-Simple React App takes JSON News Data from NewsAPI to keep you updated with latest news.
+Clone or download the repository.
+Go to project's root directory and run following command in terminal to install dependencies:
 
-# App details
+`yarn install`
 
-News API  https://newsapi.org/ to get the news article from different sources.
+When this finishes, start app with:
 
-fetch request to get news article from different sources From NewsAPI.
-
-Maximum of 15 news articles shown at a time.
-
+`yarn start`

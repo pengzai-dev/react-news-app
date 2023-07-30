@@ -5,7 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { StaticRouter } from 'react-router-dom/server';
 
-export default function renderApp() {
+export default function renderApp(req) {
     const html = ReactDOM.renderToString(
         <App isSSR={true} location={req.originalUrl} SSRRouter={StaticRouter} />
     );
