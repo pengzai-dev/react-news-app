@@ -1,12 +1,12 @@
 {
     "name": "news-app",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": true,
     "dependencies": {
         "@emotion/core": "^10.1.1",
         "@emotion/react": "^11.6.0",
         "@emotion/styled": "^11.6.0",
-        "@norejs/ssr-cli": "^0.0.2",
+        "@norejs/ssr-cli": "^0.0.3",
         "axios": "^0.26.1",
         "bootstrap": "^4.6.0",
         "concurrently": "^8.2.0",
