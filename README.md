@@ -10,3 +10,4 @@ Go to project's root directory and run following command in terminal to install 
 When this finishes, start app with:
 
 `yarn start`
+update
